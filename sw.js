@@ -1,5 +1,6 @@
 self.addEventListener('push', function (e) {
-	var options = {
+	// icon, text
+	var options1 = {
 		body: 'This notification was generated from a push!',
 		icon: 'images/example.png',
 		vibrate: [100, 50, 100],
@@ -7,18 +8,28 @@ self.addEventListener('push', function (e) {
 			dateOfArrival: Date.now(),
 			primaryKey: '2'
 		},
-		// actions: [
-		// 	{
-		// 		action: 'explore', title: 'Explore this new world',
-		// 		icon: 'images/checkmark.png'
-		// 	},
-		// 	{
-		// 		action: 'close', title: 'Close',
-		// 		ison: 'images/xmark.png'
-		// 	},
-		// ]
+	};
+
+	// action
+	var options2 = {
+		body: 'This notification was generated from a push!',
+		vibrate: [100, 50, 100],
+		data: {
+			dateOfArrival: Date.now(),
+			primaryKey: '2'
+		},
+		actions: [
+			{
+				action: 'explore', title: 'Explore this new world',
+				icon: 'images/checkmark.png'
+			},
+			{
+				action: 'close', title: 'Close',
+				ison: 'images/xmark.png'
+			},
+		]
 	};
 	e.waitUntil(
-		self.registration.showNotification('image push', options)
+		self.registration.showNotification('image push', options2)
 	);
 });
