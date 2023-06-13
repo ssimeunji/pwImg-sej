@@ -11,7 +11,7 @@ self.addEventListener('push', function (e) {
 	};
 
 	// action
-	var options2 = {
+	var options = {
 		body: 'This notification was generated from a push!',
 		vibrate: [100, 50, 100],
 		data: {
@@ -30,6 +30,6 @@ self.addEventListener('push', function (e) {
 		]
 	};
 	e.waitUntil(
-		self.registration.showNotification('Push Test', options2)
+		self.registration.showNotification('Push Test', options)
 	);
 });
