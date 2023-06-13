@@ -7,16 +7,16 @@ self.addEventListener('push', function (e) {
 			dateOfArrival: Date.now(),
 			primaryKey: '2'
 		},
-		actions: [
-			{
-				action: 'explore', title: 'Explore this new world',
-				icon: 'images/checkmark.png'
-			},
-			{
-				action: 'close', title: 'Close',
-				ison: 'images/xmark.png'
-			},
-		]
+		// actions: [
+		// 	{
+		// 		action: 'explore', title: 'Explore this new world',
+		// 		icon: 'images/checkmark.png'
+		// 	},
+		// 	{
+		// 		action: 'close', title: 'Close',
+		// 		ison: 'images/xmark.png'
+		// 	},
+		// ]
 	};
 	e.waitUntil(
 		self.registration.showNotification('image push', options)
