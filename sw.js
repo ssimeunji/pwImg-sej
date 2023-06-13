@@ -11,7 +11,7 @@ self.addEventListener('push', function (e) {
 	};
 
 	// action
-	var options = {
+	var options2 = {
 		body: 'This notification was generated from a push!',
 		vibrate: [100, 50, 100],
 		data: {
@@ -29,6 +29,19 @@ self.addEventListener('push', function (e) {
 			},
 		]
 	};
+
+	// img
+	var options = {
+		body: 'This notification was generated from a push!',
+		icon: 'images/example.png',
+		img: 'images/imgExam.jpg',
+		vibrate: [100, 50, 100],
+		data: {
+			dateOfArrival: Date.now(),
+			primaryKey: '2'
+		},
+	};
+
 	e.waitUntil(
 		self.registration.showNotification('Push Test', options)
 	);
