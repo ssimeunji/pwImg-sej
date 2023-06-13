@@ -30,6 +30,6 @@ self.addEventListener('push', function (e) {
 		]
 	};
 	e.waitUntil(
-		self.registration.showNotification('image push', options2)
+		self.registration.showNotification('Push Test', options2)
 	);
 });
