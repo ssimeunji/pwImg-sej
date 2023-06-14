@@ -14,7 +14,7 @@ self.addEventListener('push', function (e) {
 	};
 
 	// action
-	var options2 = {
+	var options = {
 		body: 'This is Action Push!',
 		vibrate: [100, 50, 100],
 		data: {
@@ -34,7 +34,7 @@ self.addEventListener('push', function (e) {
 	};
 
 	// img
-	var options = {
+	var options3 = {
 		body: 'This is Img Push !!',
 		dir: 'rtl',
 		image: 'images/imgExam.jpg',
