@@ -1,6 +1,6 @@
 self.addEventListener('push', function (e) {
 	// icon, text
-	var options = {
+	var options1 = {
 		body: 'This notification was generated from a push!',
 		icon: 'images/example.png',
 		vibrate: [100, 50, 100],
@@ -12,7 +12,6 @@ self.addEventListener('push', function (e) {
 
 	// action
 	var options2 = {
-		title: 'Action Push !!',
 		body: 'This notification was generated from a push!',
 		vibrate: [100, 50, 100],
 		data: {
@@ -32,8 +31,7 @@ self.addEventListener('push', function (e) {
 	};
 
 	// img
-	var options3 = {
-		title: 'Image Push !!',
+	var options = {
 		body: 'This notification was generated from a push!',
 		image: 'images/imgExam.jpg',
 		vibrate: [100, 50, 100],
