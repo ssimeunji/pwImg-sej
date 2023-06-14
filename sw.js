@@ -1,4 +1,7 @@
 self.addEventListener('push', function (e) {
+
+	const title = '2023';
+
 	// icon, text
 	var options1 = {
 		body: 'This is Icon Push!',
@@ -33,6 +36,7 @@ self.addEventListener('push', function (e) {
 	// img
 	var options = {
 		body: 'This is Img Push!',
+		dir: 'rtl',
 		image: 'images/imgExam.jpg',
 		vibrate: [100, 50, 100],
 		data: {
@@ -42,6 +46,6 @@ self.addEventListener('push', function (e) {
 	};
 
 	e.waitUntil(
-		self.registration.showNotification("2023", options)
+		self.registration.showNotification(title, options)
 	);
 });
