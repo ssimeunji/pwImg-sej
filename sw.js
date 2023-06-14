@@ -32,8 +32,8 @@ self.addEventListener('push', function (e) {
 
 	// img
 	var options = {
+		title: 'Image Push !!',
 		body: 'This notification was generated from a push!',
-		icon: 'images/example.png',
 		image: 'images/imgExam.jpg',
 		vibrate: [100, 50, 100],
 		data: {
@@ -43,6 +43,6 @@ self.addEventListener('push', function (e) {
 	};
 
 	e.waitUntil(
-		self.registration.showNotification('Push Img Test', options)
+		self.registration.showNotification(options)
 	);
 });
