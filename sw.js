@@ -12,6 +12,7 @@ self.addEventListener('push', function (e) {
 
 	// action
 	var options = {
+		title: 'Action Push !!',
 		body: 'This notification was generated from a push!',
 		vibrate: [100, 50, 100],
 		data: {
