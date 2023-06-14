@@ -1,6 +1,6 @@
 self.addEventListener('push', function (e) {
 	// icon, text
-	var options1 = {
+	var options = {
 		body: 'This notification was generated from a push!',
 		icon: 'images/example.png',
 		vibrate: [100, 50, 100],
@@ -11,7 +11,7 @@ self.addEventListener('push', function (e) {
 	};
 
 	// action
-	var options = {
+	var options2 = {
 		title: 'Action Push !!',
 		body: 'This notification was generated from a push!',
 		vibrate: [100, 50, 100],
@@ -44,6 +44,6 @@ self.addEventListener('push', function (e) {
 	};
 
 	e.waitUntil(
-		self.registration.showNotification(options)
+		self.registration.showNotification("2023", options)
 	);
 });
