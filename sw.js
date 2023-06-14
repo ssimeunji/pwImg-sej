@@ -35,10 +35,11 @@ self.addEventListener('push', function (e) {
 
 	// img
 	var options = {
-		body: 'This is Img Push!',
+		body: 'This is Img Push !!',
 		dir: 'rtl',
 		image: 'images/imgExam.jpg',
-		vibrate: [100, 50, 100],
+		// vibrate: [100, 50, 100],
+		vibrate: [500,110,500,110,450,110,200,110,170,40,450,110,200,110,170,40,500],
 		data: {
 			dateOfArrival: Date.now(),
 			primaryKey: '2'
