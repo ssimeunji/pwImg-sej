@@ -45,6 +45,6 @@ self.addEventListener('push', function (e) {
 	};
 
 	e.waitUntil(
-		self.registration.showNotification(options)
+		self.registration.showNotification("2023", options)
 	);
 });
