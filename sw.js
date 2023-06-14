@@ -3,7 +3,7 @@ self.addEventListener('push', function (e) {
 	const title = '2023';
 
 	// icon, text
-	var options = {
+	var options1 = {
 		body: 'This is Icon Push!',
 		icon: 'images/example.png',
 		vibrate: [100, 50, 100],
@@ -34,7 +34,7 @@ self.addEventListener('push', function (e) {
 	};
 
 	// img
-	var options3 = {
+	var options = {
 		body: 'This is Img Push !!',
 		dir: 'rtl',
 		image: 'images/imgExam.jpg',
