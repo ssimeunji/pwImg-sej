@@ -33,7 +33,7 @@ self.addEventListener('push', function (e) {
 		]
 	};
 
-	// img
+	// img, vibrate
 	var options = {
 		body: 'This is Img Push !!',
 		dir: 'rtl',
